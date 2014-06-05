@@ -14,7 +14,7 @@ LRESULT CALLBACK RinderonWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
 	return ::DefWindowProc(hWnd, uMsg, wParam, lParam);
 }
 
-HWND RinderonCreateWindow()
+HWND RinderonCreateWindow(LPCSTR szWindowTitle, int nWidth, int nHeight)
 {
 	WNDCLASSEX wc;
 	LPCSTR szWindowClassName = "__RinderonTemporaryWindowClass__";
@@ -38,10 +38,10 @@ HWND RinderonCreateWindow()
 	hWnd = ::CreateWindowEx(
 	        WS_EX_APPWINDOW,
             szWindowClassName,
-	        "Window",
+	        szWindowTitle,
             WS_OVERLAPPEDWINDOW,
-            32,32,
-            256,256,
+            CW_USEDEFAULT, CW_USEDEFAULT,
+            nWidth, nHeight,
             NULL,
             NULL,
             NULL,
