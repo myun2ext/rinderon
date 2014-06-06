@@ -15,3 +15,18 @@ void Rinderon9FillRect(IDirect3DDevice9* d3dDev, D3DCOLOR cl, const RECT& rect)
 {
 	d3dDev->Clear(0, &rect, D3DCLEAR_TARGET, cl, 1.0f, 0);
 }
+
+void Rinderon9EndScene(IDirect3DDevice9* d3dDev)
+{
+	d3dDev->EndScene();
+}
+
+void Rinderon9BeginScene(IDirect3DDevice9* d3dDev)
+{
+	d3dDev->BeginScene();
+}
+
+void Rinderon9Present(IDirect3DDevice9* d3dDev)
+{
+	d3dDev->Present(NULL, NULL, NULL, NULL);
+}
