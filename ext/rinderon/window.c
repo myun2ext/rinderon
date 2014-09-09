@@ -1,7 +1,4 @@
-#include "ruby.h"
-
-#define RB_MODULE					VALUE
-#define RB_CLASS					VALUE
+#include "rubyext.h"
 
 #define RINDERON_MODULE_NAME		"Rinderon"
 #define RINDERON_WINDOW_CLASS_NAME	"Window"
