@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{DirectX / Windows Application for Ruby}
   spec.homepage      = ""
   spec.license       = "MIT"
+  spec.extensions    = %w[ext/rinderon/extconf.rb]
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
