@@ -1,12 +1,6 @@
-#include "ruby.h"
-
-VALUE wrap_hello(VALUE self)
-{
-  return rb_str_new2("hello");
-}
+#include "rinderon.h"
 
 void Init_rinderon()
 {
-  VALUE mod_rinderon = rb_define_module("Rinderon");
-  rb_define_module_function(mod_rinderon, "hello", wrap_hello, 0);
+	CLS_RINDERON_WINDOW;
 }

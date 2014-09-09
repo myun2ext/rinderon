@@ -6,4 +6,6 @@
 #define RB_MODULE	VALUE
 #define RB_CLASS	VALUE
 
+#define RB_CLASS_OBJECT		rb_cObject
+
 #endif//__GITHUB_MYUN2__RUBYEXT_H__
